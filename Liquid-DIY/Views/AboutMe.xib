@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AboutMe" customModule="Liquid_DIY" customModuleProvider="target">
+            <connections>
+                <outlet property="closeBtn" destination="QNZ-z8-uB1" id="YCo-mG-tbZ"/>
+                <outlet property="copyrightLabel" destination="sif-zy-SGX" id="89D-lH-h9b"/>
+                <outlet property="descTextView" destination="ckN-Hp-E4w" id="izw-vQ-7DO"/>
+                <outlet property="imgAbout" destination="fGo-CR-Hcs" id="yrA-lc-6Et"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DIY Calculator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wei-Pl-LQy">
+                    <rect key="frame" x="30" y="40" width="315" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="tb2-OQ-H5q"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How to use it ?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i8m-e8-HhA">
+                    <rect key="frame" x="50" y="185" width="275" height="21.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoDIY" translatesAutoresizingMaskIntoConstraints="NO" id="fGo-CR-Hcs">
+                    <rect key="frame" x="125" y="40" width="125" height="125"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="125" id="TuB-7Y-ErS"/>
+                        <constraint firstAttribute="width" constant="125" id="jsu-He-oPC"/>
+                    </constraints>
+                </imageView>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ckN-Hp-E4w">
+                    <rect key="frame" x="40" y="226.5" width="295" height="329.5"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QNZ-z8-uB1" customClass="Buttons" customModule="Liquid_DIY" customModuleProvider="target">
+                    <rect key="frame" x="147.5" y="576" width="80" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="Kn3-0D-iEQ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="Close"/>
+                    <connections>
+                        <action selector="closeAction:" destination="-1" eventType="touchUpInside" id="tnY-Hx-qAl"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright - Gary Luypaert" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sif-zy-SGX">
+                    <rect key="frame" x="30" y="630" width="315" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ckN-Hp-E4w" secondAttribute="trailing" constant="40" id="CFv-QU-GX6"/>
+                <constraint firstItem="ckN-Hp-E4w" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="40" id="Ljc-UK-cEH"/>
+                <constraint firstItem="QNZ-z8-uB1" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="MrI-XF-Vjs"/>
+                <constraint firstItem="i8m-e8-HhA" firstAttribute="top" secondItem="fGo-CR-Hcs" secondAttribute="bottom" constant="20" id="N6U-il-n1x"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="wei-Pl-LQy" secondAttribute="trailing" constant="30" id="Rle-Ha-lCm"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="i8m-e8-HhA" secondAttribute="trailing" constant="50" id="Rwp-tc-aMq"/>
+                <constraint firstItem="fGo-CR-Hcs" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="aGY-D3-Kee"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="top" secondItem="wei-Pl-LQy" secondAttribute="bottom" constant="20" id="b7E-cA-12C"/>
+                <constraint firstItem="QNZ-z8-uB1" firstAttribute="top" secondItem="ckN-Hp-E4w" secondAttribute="bottom" constant="20" id="bYx-Cf-88L"/>
+                <constraint firstItem="i8m-e8-HhA" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="50" id="dSV-KN-d8O"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="sif-zy-SGX" secondAttribute="trailing" constant="30" id="eZ1-0u-jE8"/>
+                <constraint firstItem="fGo-CR-Hcs" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="g3P-80-YoX"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="sif-zy-SGX" secondAttribute="bottom" constant="20" id="hId-Iw-hK0"/>
+                <constraint firstItem="sif-zy-SGX" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="30" id="n79-7B-CIN"/>
+                <constraint firstItem="wei-Pl-LQy" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="30" id="qF1-VM-IIc"/>
+                <constraint firstItem="wei-Pl-LQy" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="rOG-Wu-GMO"/>
+                <constraint firstItem="sif-zy-SGX" firstAttribute="top" secondItem="QNZ-z8-uB1" secondAttribute="bottom" constant="20" id="sIB-cs-vcV"/>
+                <constraint firstItem="ckN-Hp-E4w" firstAttribute="top" secondItem="i8m-e8-HhA" secondAttribute="bottom" constant="20" id="xYn-f2-zgn"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="wei-Pl-LQy"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+    <resources>
+        <image name="logoDIY" width="350" height="350"/>
+    </resources>
+</document>
